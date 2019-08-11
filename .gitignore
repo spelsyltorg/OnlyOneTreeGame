@@ -19,12 +19,20 @@
 *.exe
 #Runtime Generations
 *.log
+*.tlog
 #Buildtime Generations
-.idb
-.iobj
-.ipdb
-.pdb
-.lastbuildstate
-.generated.h
-.enc
-.ipch
+*.idb
+*.iobj
+*.ipdb
+*.pdb
+*.lastbuildstate
+*unsuccessfulbuild
+*.generated.h
+*.enc
+*.ipch
+*.ilk
+#Project files
+.vs/
+*.user
+*.filter
+*.filters

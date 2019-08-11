@@ -98,6 +98,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)..\SpelSylt\SpelSylt\;$(SolutionDir)..\SpelSylt\SpelSylt\External\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)..\SpelSylt\SpelSylt\;$(SolutionDir)..\SpelSylt\SpelSylt\External\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,16 +141,77 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\AnimationSequencer.cpp" />
+    <ClCompile Include="Core\GameApplication.cpp" />
+    <ClCompile Include="Gameplay\BloodManager.cpp" />
+    <ClCompile Include="Gameplay\Controller\AIController.cpp" />
+    <ClCompile Include="Gameplay\Controller\ControllerContainer.cpp" />
+    <ClCompile Include="Gameplay\Controller\InputController.cpp" />
+    <ClCompile Include="Gameplay\DropBird.cpp" />
+    <ClCompile Include="Gameplay\Enemy\Enemy.cpp" />
+    <ClCompile Include="Gameplay\Enemy\EnemyManager.cpp" />
+    <ClCompile Include="Gameplay\Enemy\EnemyPawn.cpp" />
+    <ClCompile Include="Gameplay\Inventory\Inventory.cpp" />
+    <ClCompile Include="Gameplay\Pawn.cpp" />
+    <ClCompile Include="Gameplay\Player.cpp" />
+    <ClCompile Include="Gameplay\Tree\Tree.cpp" />
+    <ClCompile Include="Gameplay\Water\WaterPit.cpp" />
+    <ClCompile Include="Gameplay\Water\WaterSpawner.cpp" />
+    <ClCompile Include="Gameplay\Weapon\GrenadeLauncher.cpp" />
+    <ClCompile Include="Gameplay\Weapon\HandGun.cpp" />
+    <ClCompile Include="Gameplay\Weapon\HitScanWeapon.cpp" />
+    <ClCompile Include="Gameplay\Weapon\MiniGun.cpp" />
+    <ClCompile Include="Gameplay\Weapon\ShotGun.cpp" />
+    <ClCompile Include="Gameplay\Weapon\Weapon.cpp" />
+    <ClCompile Include="Gameplay\Weapon\WeaponSystem.cpp" />
+    <ClCompile Include="Gameplay\World\ProbeConstructor.cpp" />
+    <ClCompile Include="Gameplay\World\WorldProbe.cpp" />
+    <ClCompile Include="Gameplay\World\WorldState.cpp" />
+    <ClCompile Include="Gameplay\ZombieSmoke.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="States\InGameUIState.cpp" />
+    <ClCompile Include="States\TreeGameLoadingState.cpp" />
+    <ClCompile Include="States\TreeGameState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\AnimationSequencer.h" />
+    <ClInclude Include="Core\GameApplication.h" />
+    <ClInclude Include="Core\GameMessages.h" />
+    <ClInclude Include="Core\System.h" />
+    <ClInclude Include="Core\WindowDefines.h" />
+    <ClInclude Include="Gameplay\BloodManager.h" />
+    <ClInclude Include="Gameplay\Controller\AIController.h" />
+    <ClInclude Include="Gameplay\Controller\ControllerContainer.h" />
+    <ClInclude Include="Gameplay\Controller\ControllerInterface.h" />
+    <ClInclude Include="Gameplay\Controller\InputController.h" />
+    <ClInclude Include="Gameplay\DropBird.h" />
+    <ClInclude Include="Gameplay\Enemy\Enemy.h" />
+    <ClInclude Include="Gameplay\Enemy\EnemyManager.h" />
+    <ClInclude Include="Gameplay\Enemy\EnemyPawn.h" />
+    <ClInclude Include="Gameplay\Inventory\Inventory.h" />
+    <ClInclude Include="Gameplay\ItemTypes.h" />
+    <ClInclude Include="Gameplay\Pawn.h" />
+    <ClInclude Include="Gameplay\Player.h" />
+    <ClInclude Include="Gameplay\Tree\Tree.h" />
+    <ClInclude Include="Gameplay\Water\WaterPit.h" />
+    <ClInclude Include="Gameplay\Water\WaterSpawner.h" />
+    <ClInclude Include="Gameplay\Weapon\GrenadeLauncher.h" />
+    <ClInclude Include="Gameplay\Weapon\HandGun.h" />
+    <ClInclude Include="Gameplay\Weapon\HitScanWeapon.h" />
+    <ClInclude Include="Gameplay\Weapon\MiniGun.h" />
+    <ClInclude Include="Gameplay\Weapon\ShotGun.h" />
+    <ClInclude Include="Gameplay\Weapon\Weapon.h" />
+    <ClInclude Include="Gameplay\Weapon\WeaponSystem.h" />
+    <ClInclude Include="Gameplay\World\ProbeConstructor.h" />
+    <ClInclude Include="Gameplay\World\WorldObject.h" />
+    <ClInclude Include="Gameplay\World\WorldProbe.h" />
+    <ClInclude Include="Gameplay\World\WorldState.h" />
+    <ClInclude Include="Gameplay\ZombieSmoke.h" />
+    <ClInclude Include="States\InGameUIState.h" />
+    <ClInclude Include="States\TreeGameLoadingState.h" />
+    <ClInclude Include="States\TreeGameState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-  <ItemGroup>
-    <ClCompile Include="OnlyOneTreeGameSource.cpp" />
-    <ClCompile Include="GameApplication.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GameApplication.h" />
-    <ClInclude Include="OnlyOneTreeGameState.h" />
-  </ItemGroup>
 </Project>
