@@ -1,0 +1,4 @@
+[submodule "SpelSylt"]
+	path = SpelSylt
+	url = https://github.com/spelsyltorg/SpelSylt.git
+	branch = development

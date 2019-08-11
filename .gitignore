@@ -1,0 +1,30 @@
+#Compiled Object Files
+*.slo
+*.lo
+*.o
+*.obj
+#Pre comp h
+*.gch
+*.pch
+#Compiled Dynamic Libs
+*.so
+*.dylib
+#Compiled Static libs
+*.lai
+*.la
+*.a
+#Fortran module files
+.mod
+#Executable
+*.exe
+#Runtime Generations
+*.log
+#Buildtime Generations
+.idb
+.iobj
+.ipdb
+.pdb
+.lastbuildstate
+.generated.h
+.enc
+.ipch
